@@ -19,8 +19,6 @@ var writePassword = function() {
   var includeNumbers = window.confirm("Include numeric characters? (Yes: OK / No: Cancel)");
   var includeSpecial = window.confirm("Include special characters? (Yes: OK / No: Cancel)");
 
- 
-  
   function generatePassword() {
     // Character Container
     var result = [];
@@ -29,7 +27,7 @@ var writePassword = function() {
     var lowercase = "abcdefghijklmnopqrstuvwxyz";
     var numbers = "1234567890";
     var special = "!#$%&()*+,-./:;<=>?@[]^_`{|}~";
-    // Password Types
+    // Password Types (16 different combinations)
     var type0 = "";
     var type1 = special;
     var type2 = numbers;
